@@ -1,0 +1,87 @@
+ 
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #2f2f2f;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .board-container {
+      position: relative;
+      width: 480px;
+      height: 480px;
+    }
+
+    .chessboard {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      width: 100%;
+      height: 100%;
+      border: 4px solid #222;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .square {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .white {
+      background-color: #ffffff;
+    }
+
+    .black {
+      background-color: #000000;
+    }
+
+    /* Letras e números nas bordas */
+    .labels {
+      position: absolute;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .letters-top, .letters-bottom {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      left: 0;
+      padding: 0 4px;
+    }
+
+    .letters-top { top: -20px; }
+    .letters-bottom { bottom: -20px; }
+
+    .numbers-left, .numbers-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      top: 0;
+      padding: 4px 0;
+    }
+
+    .numbers-left { left: -20px; }
+    .numbers-right { right: -20px; }
+
+    .letter, .number {
+      width: 16px;
+      text-align: center;
+    }
+  .square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  user-select: none;
+}
